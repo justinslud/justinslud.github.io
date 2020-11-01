@@ -184,3 +184,8 @@ footer li {
 footer p {
   text-align: right;
 }
+
+image {
+  height: 50px;
+  width: 100 px;
+}

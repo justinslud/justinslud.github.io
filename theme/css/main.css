@@ -122,7 +122,7 @@ pre {
 
 /* line 104, ../../compass/src/main.scss */
 header {
-  padding-bottom: 20px;
+  padding-bottom: 10px; /* changed from 20px*/
 }
 /* line 106, ../../compass/src/main.scss */
 header a {
@@ -135,7 +135,7 @@ header a#page-title {
 
 /* line 112, ../../compass/src/main.scss */
 #article-list {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 /* line 114, ../../compass/src/main.scss */
 #article-list ol li {

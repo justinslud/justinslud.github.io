@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Justin Slud - Blog</title><link href="https://justinslud.github.io/" rel="alternate"></link><link href="https://justinslud.github.io/feeds/blog.atom.xml" rel="self"></link><id>https://justinslud.github.io/</id><updated>2020-10-29T00:00:00-04:00</updated><entry><title>Wikipedia Current News Analysis</title><link href="https://justinslud.github.io/wiki1.html" rel="alternate"></link><published>2020-10-29T00:00:00-04:00</published><updated>2020-10-29T00:00:00-04:00</updated><author><name>Justin Slud</name></author><id>tag:justinslud.github.io,2020-10-29:/wiki1.html</id><content type="html">&lt;!-- # Outline --&gt;
+
+&lt;!-- - Understanding what we want to scrape
+- Scraping a single page
+- Scraping multiple pages
+- Viewing data --&gt;
+
+&lt;p&gt;Please see the general info for this project on the &lt;a href="../projects.html##wikipedia-current-news-analysis"&gt;Projects page&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I split this project into 3 parts:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="https://github.com/justinslud/scrape-wikipedia-current-events/blob/main/wiki_scrape_db.py"&gt;Collecting the data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/justinslud/scrape-wikipedia-current-events/blob/main/explore_headlines.ipynb"&gt;Exploring and understanding the data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Machine learning tasks (in progress)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;!-- [I am writing this as a tutorial in case anyone wants to scrape Wikipedia Current News portal as well.]
+
+## Understanding what we want to scrape
+
+Here's an example snapshot from November 11, 2018:
+
+Each page contains all headlines from a month, but there's also other information such as recent deaths, ... But for now, we want to focus on headlines.
+
+Here is all the data worth collecting from the webpage:
+
+- day
+- month
+- year
+- subject (Sports, Business and Economy, etc)
+- event () if it exists
+- text: the actual headline
+
+Looking at the example, most headlines have a source name enclosed in parenthesis at the end. We can collect those now and extract them later. --&gt;
+
+&lt;!-- Click here to read part 2. --&gt;</content><category term="Blog"></category><category term="projects"></category></entry></feed>

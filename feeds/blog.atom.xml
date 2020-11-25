@@ -1,35 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Justin Slud - Blog</title><link href="https://justinslud.github.io/" rel="alternate"></link><link href="https://justinslud.github.io/feeds/blog.atom.xml" rel="self"></link><id>https://justinslud.github.io/</id><updated>2020-10-29T00:00:00-04:00</updated><entry><title>Wikipedia Current News Analysis</title><link href="https://justinslud.github.io/wiki1.html" rel="alternate"></link><published>2020-10-29T00:00:00-04:00</published><updated>2020-10-29T00:00:00-04:00</updated><author><name>Justin Slud</name></author><id>tag:justinslud.github.io,2020-10-29:/wiki1.html</id><content type="html">&lt;!-- # Outline --&gt;
-
-&lt;!-- - Understanding what we want to scrape
-- Scraping a single page
-- Scraping multiple pages
-- Viewing data --&gt;
-
-&lt;p&gt;Please see the general info for this project on the &lt;a href="../projects.html##wikipedia-current-news-analysis"&gt;Projects page&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;I split this project into 3 parts:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Justin Slud - Blog</title><link href="https://justinslud.github.io/" rel="alternate"></link><link href="https://justinslud.github.io/feeds/blog.atom.xml" rel="self"></link><id>https://justinslud.github.io/</id><updated>2020-10-29T00:00:00-04:00</updated><entry><title>Wikipedia Current News Analysis</title><link href="https://justinslud.github.io/wiki1.html" rel="alternate"></link><published>2020-10-29T00:00:00-04:00</published><updated>2020-10-29T00:00:00-04:00</updated><author><name>Justin Slud</name></author><id>tag:justinslud.github.io,2020-10-29:/wiki1.html</id><summary type="html">&lt;p&gt;Please see the general info for this project on the &lt;a href="https://justinslud.github.io/projects.html##wikipedia-current-events-analysis"&gt;Projects page&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I split this project into 5 parts. The links are to the scripts and notebooks within this repository.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;a href="https://github.com/justinslud/scrape-wikipedia-current-events/blob/main/wiki_scrape_db.py"&gt;Collecting the data&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/justinslud/scrape-wikipedia-current-events/blob/main/explore_headlines.ipynb"&gt;Exploring and understanding the data&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Machine learning tasks (in progress)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/justinslud/scrape-wikipedia-current-events/blob/main/1_scrape_headlines.py"&gt;Collecting the data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/justinslud/scrape-wikipedia-current-events/blob/main/2_explore_data.ipynb"&gt;Exploring and understanding the data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/justinslud/scrape-wikipedia-current-events/blob/main/3_predict_subject.ipynb"&gt;Machine learning modelling&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/justinslud/scrape-wikipedia-current-events/blob/main/4_make_api.py"&gt;Building a Flask API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/justinslud/scrape-wikipedia-current-events/blob/main/5_build_interface.py"&gt;Making an interactive Streamlit app …&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;p&gt;Please see the general info for this project on the &lt;a href="https://justinslud.github.io/projects.html##wikipedia-current-events-analysis"&gt;Projects page&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I split this project into 5 parts. The links are to the scripts and notebooks within this repository.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="https://github.com/justinslud/scrape-wikipedia-current-events/blob/main/1_scrape_headlines.py"&gt;Collecting the data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/justinslud/scrape-wikipedia-current-events/blob/main/2_explore_data.ipynb"&gt;Exploring and understanding the data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/justinslud/scrape-wikipedia-current-events/blob/main/3_predict_subject.ipynb"&gt;Machine learning modelling&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/justinslud/scrape-wikipedia-current-events/blob/main/4_make_api.py"&gt;Building a Flask API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/justinslud/scrape-wikipedia-current-events/blob/main/5_build_interface.py"&gt;Making an interactive Streamlit app&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;!-- [I am writing this as a tutorial in case anyone wants to scrape Wikipedia Current News portal as well.]
-
-## Understanding what we want to scrape
-
-Here's an example snapshot from November 11, 2018:
-
-Each page contains all headlines from a month, but there's also other information such as recent deaths, ... But for now, we want to focus on headlines.
-
-Here is all the data worth collecting from the webpage:
-
-- day
-- month
-- year
-- subject (Sports, Business and Economy, etc)
-- event () if it exists
-- text: the actual headline
-
-Looking at the example, most headlines have a source name enclosed in parenthesis at the end. We can collect those now and extract them later. --&gt;
-
-&lt;!-- Click here to read part 2. --&gt;</content><category term="Blog"></category><category term="projects"></category></entry></feed>
+&lt;p&gt;You can access the Streamlit app &lt;a href="https://share.streamlit.io/justinslud/streamlit-apps/main/app.py"&gt;here&lt;/a&gt; and clicking 'Wikipedia Current Events Analysis' on the sidebar.&lt;/p&gt;
+&lt;p&gt;Here are is a summary of how I carried out the project:&lt;/p&gt;
+&lt;h2&gt;1. Collecting the data&lt;/h2&gt;
+&lt;p&gt;The Wikipedia current events portal has changed their HTML structure over the years. Despite not scraping all headlines, I still scraped over 50,000 headlines from 1995-2017.&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2&gt;2. Exploring and understanding the data&lt;/h2&gt;
+&lt;p&gt;I try and plot how often a term appears in headlines over the year, but this is not a good measure of how popular a term is actual. Wikipedia is heavily biased towards specific people and international conflicts such as wars and attacks. If I wanted to do an actual trend plot, my dataset of choice would be an media website, but even those are biased towards certain people and events.&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2&gt;3. Exploring and understanding the data&lt;/h2&gt;
+&lt;p&gt;Since this project was more exploratory, I did not have a specific prediction task in mind. I tried to predict which year a headline was from through KMeans clustering and logistic regression, but the heavy class imbalance (only 200 articles from 1995 but 2000 from 2015) made the task difficult.&lt;/p&gt;
+&lt;p&gt;Predicting the subject of headlines was a more interesting and successful task. &lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2&gt;4. Building a Flask API&lt;/h2&gt;
+&lt;p&gt;I wanted to build an example API that a user to send headlines to and receive my model's predictions and predicted probabilities. The actual prediction is taken care of my sci-kit, so the challenge here came from structuring the response JSON and handling 1 or many inputs.&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2&gt;5. Making an interactive Streamlit app&lt;/h2&gt;
+&lt;p&gt;The trend plotting exploratory data analysis and subject prediction look better with visuals on a website. Streamlit made this really straightforward and I used bokeh to make the trend plot.&lt;/p&gt;</content><category term="Blog"></category><category term="projects"></category></entry></feed>

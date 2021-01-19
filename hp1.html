@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Justin Slud : Hutter Prize Goal Progress Report 1</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="https://justinslud.github.io/theme/css/main.css" type="text/css" />
+        <link href="https://justinslud.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Justin Slud ATOM Feed" />
+
+</head>
+
+<body>        
+        
+<header>
+    <h1><a href="https://justinslud.github.io" id="site-title">Justin Slud </a> :
+        <a href="https://justinslud.github.io/hp1.html" id="page-title">Hutter Prize Goal Progress Report 1</a></h1>
+</header>
+<article>
+    <p>This post is to update on my project to build a text compressor. I began this project in January 2020. <strong>My goal is to get on the Hutter Prize leaderboard.</strong> It is probably too ambitious, but I will try. It has been a great learning experience regardless.</p>
+<p>I don't expect anyone to read this or care about it or even understand my notes, but I want to hold myself accountable to writing these reports. However, I do plan on writing more general posts about data compression. </p>
+<h3>January</h3>
+<p>03</p>
+<ul>
+<li>read c++ implementation of LZ77</li>
+<li>started snippets file for c++ notes</li>
+<li>learned about c++ command line arguments, g++ flags, hex to binary</li>
+</ul>
+<p>04</p>
+<ul>
+<li>wrote python scipt to get samples of enwik9 dataset</li>
+<li>use python's bytes function and bitarray library to practice using bits and bytes</li>
+<li>started making project folders in CodeBlocks</li>
+<li>downloaded lpaq8 compressor and read some of it</li>
+<li>watch Compressor Head videos</li>
+<li>looked at enwik9 samples and thought about using redundancy in xml tags to code them more easily (I later abandoned this idea since most of the data lies within the text and not the tags)</li>
+</ul>
+<p>05</p>
+<ul>
+<li>read and wrote down example of Huffman coding and Burrows Wheeler transform</li>
+<li>discovered encode.su, the forum about compression, but didn't understand the very technical discussions and didn't get much out of the meta-discussions</li>
+<li>wrote basic c++ functions equivalent to python's split and join</li>
+<li>read and followed along (actually writing their code into my own file and running it for better understanding) c++ implementation of Huffman coding</li>
+<li>added a decoder for Huffman-encoded strings</li>
+</ul>
+<p>06</p>
+<ul>
+<li>copied and modified c++ code to display progress bar in console</li>
+<li>benchmarked enwik samples on lpaq8e and wrote down compression time, compression ratio, memory used, and decompression time</li>
+<li>wrote down example of LZ77 coding</li>
+<li>read some of Matt Mahoney's work on context mixing</li>
+</ul>
+<p>07</p>
+<ul>
+<li>played with c++ bitset and bitwise operators</li>
+<li>downloaded and started reading paq8hpany_src, a context mixing program used as part of a Hutter Prize winner</li>
+<li>learned about c++ templates</li>
+<li>read P. Skiblinski's papers about reversible text transformations for preprocessing which improve paq8's context mixing</li>
+</ul>
+<p>08</p>
+<ul>
+<li>setup bibliography to keep track of papers, code samples, compression programs, books, etc</li>
+<li>checked computer to see how to free up more RAM, decided I can worry about it more later</li>
+<li>read textFilter, the preprocessor for paq8</li>
+<li>compiled and ran paq8 on enwik samples</li>
+</ul>
+<p>11</p>
+<ul>
+<li>debug paq8 to step through and look for error</li>
+<li>lookup other programs on Large Text Compression Benchmark</li>
+</ul>
+<p>12</p>
+<ul>
+<li>switched to visual studio code for IDE</li>
+<li>learned debugging and configuring build/debug tasks in VSCode</li>
+</ul>
+<p>13</p>
+<ul>
+<li>read Matt Mahoney's data analysis of enwik9</li>
+<li>read about using neural networks for PPM and PAQ</li>
+</ul>
+<p>14</p>
+<ul>
+<li>download c minimal unit test library and use it on sample scripts</li>
+</ul>
+<p>15</p>
+<ul>
+<li>download c++ minimal neural network library and try (and fail) using</li>
+<li>download cmix compression program and explore file structure</li>
+<li>thought about idea where 2 different symbols share the same code and the pre-code details the switching order of the 2 symbols occurrences (later abandoned due to the superiority of adaptive statistical coding and the confusion different characters in unexpected places would mess up character prediction)</li>
+</ul>
+<p>17</p>
+<ul>
+<li>write forward Burrows Wheeler transform in python for binary strings and try repeating transform and using Run-Length encoding to reduce size</li>
+<li>read cmix runner and encoder/IO functions and take notes</li>
+</ul>
+<p>18</p>
+<ul>
+<li>try and compile stripped down version of cmix</li>
+<li>learn/use more of g++ and makefile</li>
+</ul>
+</article>
+
+        
+        <footer>
+            <nav>
+                <ul>
+
+                    <li><a href="https://justinslud.github.io/about-contact.html">About / Contact</a></li>
+
+                    <li>:: <a href="https://justinslud.github.io/projects.html">Projects</a></li>
+
+                       <!--  <li>:: <a href="https://justinslud.github.io/now.html">Now</a></li> -->
+                
+                    <!-- <li>:: <a href="https://justinslud.github.io/tags.html">Tags</a></li> -->
+                
+                
+                    <li>:: <a href="https://justinslud.github.io/archives.html">Archives</a></li>
+                
+                </ul>
+            </nav>
+                
+        </footer>
+
+</body>
+</html>

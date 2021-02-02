@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Justin Slud : Hutter Prize Goal Progress Report 2</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="https://justinslud.github.io/theme/css/main.css" type="text/css" />
+        <link href="https://justinslud.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Justin Slud ATOM Feed" />
+
+</head>
+
+<body>        
+        
+<header>
+    <h1><a href="https://justinslud.github.io" id="site-title">Justin Slud </a> :
+        <a href="https://justinslud.github.io/hp2.html" id="page-title">Hutter Prize Goal Progress Report 2</a></h1>
+</header>
+<article>
+    <p>This post is to update on my project to build a text compressor. I began this project in January 2020. <strong>My goal is to get on the Hutter Prize leaderboard.</strong> It is probably too ambitious, but I will try. It has been a great learning experience regardless.</p>
+<h2>Summary</h2>
+<ul>
+<li>more of reading cmix source</li>
+<li>discovered tensorflow-compress (also by Byron Knoll) and relearned some keras</li>
+<li>tried to implement huffman coding and dictionary preprocessing in python</li>
+</ul>
+<h3>January</h3>
+<p>19</p>
+<ul>
+<li>read and debugged cmix ByteModel class and LSTM usage</li>
+<li>thought about and researched compressing binary strings</li>
+<li>g++ flags for debugging and building</li>
+</ul>
+<p>20</p>
+<ul>
+<li>downloaded and tried to understand Matt Mahoney's BBB compressor and recognized some shared sections from paq8 but didn't do too deep</li>
+<li>thought about how to manipulate long binary strings using constructed BigInt class or vector of bools or bitset</li>
+<li>thought about using natural language processing tools to better model past characters (eg part of speech tagging) and research c++ tools</li>
+</ul>
+<p>22</p>
+<ul>
+<li>thought about python library similar to sklearn but for easily building, testing, and changing compression pipelines (called Data Compression Tool Kit (dctk)) </li>
+<li>looked up how to access more ram on my computer or using cloud computing</li>
+</ul>
+<p>24</p>
+<ul>
+<li>worked on huffman coding implementation for dctk. also general object design.</li>
+</ul>
+<p>25</p>
+<ul>
+<li>started Neural Networks and Deep Learning by Charu Aggarwal</li>
+<li>worked on dctk dictionary preprocessing</li>
+</ul>
+<p>26</p>
+<ul>
+<li>read cmix dictioary preprocessor</li>
+<li>started dctk Pipeline object and writing functions to encode and decode specific compression parameters in the header</li>
+</ul>
+<p>27</p>
+<ul>
+<li>lookup up resources for visualizing compression algorithms, neural networks, or general workflows</li>
+</ul>
+<p>28</p>
+<ul>
+<li>read more of tensorflow-compress and Arithmetic Coding library</li>
+</ul>
+<h2>Reflections</h2>
+<p>I definitely understand the goal better in terms of what is well established (arithmetic coding, dictionary preprocessing) and what is not (context mixing, using deep learning for language modeling) I am fortunate to have others' code to learn from and use parts of in my own projects. The amount of projects and even the complexity within cmix are extreme, which makes sense given it's state-of-the-art and contains many optimizations and hidden mathematical assumptions.</p>
+<h2>Moving Forward</h2>
+<p>I still have trouble understanding how to build an entire project from scratch, so I want to continue tinkering with c++ existing projects and trying to learn enough of keras and tensorflow to use the RNN's for character prediction. It would be great to get xeus-cling, a c++ kernel for jupyter notebooks, working, so I could quickly try new language features before using then in vscode projects which is much slower.</p>
+</article>
+
+        
+        <footer>
+            <nav>
+                <ul>
+
+                    <li><a href="https://justinslud.github.io/about-contact.html">About / Contact</a></li>
+
+                    <li>:: <a href="https://justinslud.github.io/projects.html">Projects</a></li>
+
+                       <!--  <li>:: <a href="https://justinslud.github.io/now.html">Now</a></li> -->
+                
+                    <!-- <li>:: <a href="https://justinslud.github.io/tags.html">Tags</a></li> -->
+                
+                
+                    <li>:: <a href="https://justinslud.github.io/archives.html">Archives</a></li>
+                
+                </ul>
+            </nav>
+                
+        </footer>
+
+</body>
+</html>
